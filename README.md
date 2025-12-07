@@ -34,20 +34,16 @@ Evaluating customer usage patterns, including day and night call and text charge
 <br>
 
 ## Summary 
- This project aim is to explore Cell phone dataset by cleaning the data, providing Explore Data Analyst and finally creating a basline model using Train-test split and fitting the model with KNN Model. 
-
-
-
-
 ### Data Cleaning Steps
-The dataset contain no missing value or NaN values. Outliers were deteched and were removed 
+The dataset contain no missing value or NaN values. 
+Outliers were deteched using IQR method and removed. 
+
 
 This shows the column `custserve_call` before and after the outliers were removed. 
 
 ![Histplot before and after](./images/before_after_hist_chart.png)
 
-
-
+<br>
 
 ### Key Visualizations
 
@@ -63,8 +59,10 @@ This graphs shows the Distribution of Customer Service Calls by Churn Status( by
 
 ![Distribution of Customer Service Calls ](./images/Customer_Service.png)
 
+<br>
+
 ## Conclusions/ Recommendations 
-Herer are the results of Models, I tested 3 different classification models. Out of all the models I tested The Random Forrest provided the highest score. 
+Here are the results of Models, I tested 3 different classification models. Out of all the models I tested The Random Forrest provided the highest score. 
 
 Since `churn` was a boolean variable (True/False), it was difficult using Regression on tha columns, so I switch to Classification.
 
